@@ -1,0 +1,17 @@
+body{
+    padding-top: 100px;
+}
+.center-block{
+    float: none;
+}
+
+.bd_column1{
+    background-color: #7bad7d;
+}
+.bd_column2{
+    background-color: #c76a4b;
+}
+.bd_column3{
+    background-color: #2c8ebc;
+}
+

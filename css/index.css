@@ -15,3 +15,13 @@ body{
     background-color: #2c8ebc;
 }
 
+#bd_imageTileButtefly{
+    position: relative;
+}
+#bd_imagePoemButterfly{
+    position: relative;
+    top: -364;
+    opacity: 0.5;
+    visibility: hidden;
+}
+

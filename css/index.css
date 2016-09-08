@@ -5,20 +5,23 @@ body{
     float: none;
 }
 
-.bd_column1{
+.bd_colour1{
     background-color: #7bad7d;
 }
-.bd_column2{
+.bd_colour2{
     background-color: #c76a4b;
 }
-.bd_column3{
+.bd_colour3{
     background-color: #2c8ebc;
 }
+.bd_colour4{
+    background-color: #ffffd2;
+}
 
-#bd_imageTileButtefly{
+.bd_imageTile{
     position: relative;
 }
-#bd_imagePoemButterfly{
+.bd_imagePoem{
     position: relative;
     top: -364;
     opacity: 0.5;

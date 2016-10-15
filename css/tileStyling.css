@@ -1,0 +1,28 @@
+.bd_container{
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+.bd_lower{
+    z-index: 1;
+}
+.bd_upper{
+    z-index: 2;
+    visibility: hidden;
+}
+.bd_invisible{
+    opacity: 0;
+    z-index: 3;
+}
+
+.bd_image{
+    height: 100%;
+}
+.bd_imageSpan{
+    top: 0;
+    left: 0;
+    height: auto;
+    position: absolute;
+}

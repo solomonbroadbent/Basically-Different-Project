@@ -23,5 +23,9 @@
     top: -364;
     opacity: 0.5;
     visibility: hidden;
-}ss
+}
+
+.bd_storySection h1{
+    font-size: 300%;
+}
 

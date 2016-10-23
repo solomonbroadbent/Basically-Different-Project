@@ -1,6 +1,7 @@
 function changeOverlayStatus(imageWhichOverlays, shouldOverlay){
     if(shouldOverlay == true){
-        document.getElementById(imageWhichOverlays).style.visibility = 'visible';
+        document.getElementById(imageWhichOverlays).style.visibility = 
+            'visible';
     }
     else{
         document.getElementById(imageWhichOverlays).style.visibility = 'hidden';

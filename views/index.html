@@ -1,468 +1,499 @@
-<!DOCTYPE = HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <!-- JS libraries -->
-    <script src="../js/libs/jquery.scrollTo-2.1.2/jquery.scrollTo.js" 
-        type="text/javascript"></script>
-    <script src="../js/libs/jquery.localScroll-1.4.0/jquery.localScroll.js" 
-        type="text/javascript"></script>
-    <script src="../js/libs/jquery-2.2.4.js"></script>
-    <script src="../js/libs/bootstrap.js"></script>
-
-    <!-- JS controllers -->  
-    <script src="../js/controllers/imageHover.js"></script>
-    <script src="../js/controllers/scrollToElement.js"></script>
-    <script src="../js/controllers/disableImageRightClick.js"></script>
-
-    <!-- CSS libraries -->
-    <link href="../css/libs/bootstrap.css" rel="stylesheet">
-    
-    <!-- CSS files -->
-    <link href="../css/index.css" rel="stylesheet">
-    <link href="../css/tileStyling.css" rel="stylesheet">
-    <link href="../css/fontStyling.css" rel="stylesheet">
-    
-    <!-- Broweser defualts -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, 
-        maximum-scale=1, user-scalable=no">
+	<!-- JS libraries -->
+	<script src='../js/libs/jquery.scrollTo-2.1.2/jquery.scrollTo.js'
+		type='text/javascript'></script>
+	<script src='../js/libs/jquery.localScroll-1.4.0/jquery.localScroll.js'
+		type='text/javascript'></script>
+	<script src='../js/libs/jquery-2.2.4.js'></script>
+	<script src='../js/libs/bootstrap.js'></script>
+	<!-- JS controllers -->
+	<script src='../js/controllers/imageHover.js'></script>
+	<script src='../js/controllers/scrollToElement.js'></script>
+	<script src='../js/controllers/disableImageRightClick.js'></script>
+	<!-- CSS libraries -->
+	<link href='../css/libs/bootstrap.css'
+		rel='stylesheet'>
+	<!-- CSS files -->
+	<link href='../css/index.css'
+		rel='stylesheet'>
+	<link href='../css/tileStyling.css'
+		rel='stylesheet'>
+	<link href='../css/fontStyling.css'
+		rel='stylesheet'>
+	<!-- Broweser defualts -->
+	<meta name='viewport'
+		content='width=device-width, initial-scale=1,
+        maximum-scale=1, user-scalable=no'>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-            <a href="#" class="navbar-brand">
-                Basically Differant
-            </a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="#" onclick="scrollToElement('bd_top')">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onclick="scrollToElement('bd_purchase')">
-                        Purchase
-                    </a>
-                </li>
-                <li>
-                <a href="#">
-                        Cycoda
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div style="height: 100px" id="bd_top"></div>
-    
-    <!-- Main site body -->
-    <div class="row">
-        <div class="col-lg-6 center-block">
-            <img src="../content/images/logo header 2.jpg" 
-                class="img-responsive" width="100%">
-        </div>
-        <div class="container">
-            <div class="jumbotron bd_colour1">
-                <h1>
-                    Laying the foundation to enquire into the world
-                </h1>
-                <p>
-                    The senses are the windows to the world. Treated with 
-                    respect, they are capacities through which we
-                    develop strong faculties. This stunning alphabet set and 
-                    delightful book of poems reinforce early
-                    childhood learning and extends vocabulary, while encouraging
-                    and developing the comprehension of
-                    art and literature in a fun and exciting way.
-                </p>
-            </div>
-            <div class="jumbotron bd_colour2">
-                <h1>
-                    Foster the senses and make the most of life!
-                </h1>
-                <p>
-                    26 beautiful alphabet cards together with a book of poems 
-                    fire all sorts of synapses in the brain, stimulating 
-                    imagination.
-                </p>
-            </div>
-            <div class="jumbotron bd_colour3">
-                <p>
-                    The set includes beautiful paintings of the things in our 
-                    world that our children can point to, or see and describe.
-                </p>
-            </div>
-            <div class="jumbotron bd_colour4 bd_storySection">
-                <h2>
-                    To hear a child describe a butterfly as a 'fluttering 
-                    rainbow',
-                </h2>
-                <div class="bd_container center-block">
-                    <span class="bd_lower bd_imageSpan">
-                        <img src="../content/images/tile%20butterfly.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_invisible bd_imageSpan" 
-                        onmouseenter=
-                        "changeOverlayStatus('bd_poemButterfly', true)" 
-                        onmouseleave=
-                        "changeOverlayStatus('bd_poemButterfly', false)">
-                        <img src="../content/images/BVE butterfly pic.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_upper bd_imageSpan" id="bd_poemButterfly">
-                        <img src="../content/images/BVE butterfly text.png" 
-                            class="bd_image">
-                    </span>
-                </div>
-                <h2>
-                    a volcano as 'scary exciting, mountain on fire',
-                </h2>
-                <div class="bd_container center-block">
-                    <span class="bd_lower bd_imageSpan">
-                        <img src="../content/images/tile%20volcano.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_invisible bd_imageSpan" 
-                        onmouseenter=
-                        "changeOverlayStatus('bd_poemVolcano', true)" 
-                        onmouseleave=
-                        "changeOverlayStatus('bd_poemVolcano', false)">
-                        <img src="../content/images/tile%20volcano.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_upper bd_imageSpan" id="bd_poemVolcano">
-                        <img src="../content/images/poem%20volcano.jpg" 
-                            class="bd_image">
-                    </span>
-                </div>
-                <h2>
-                    or ask an elaphant, 'can I be your friend?',
-                </h2>
-                <div class="bd_container center-block">
-                    <span class="bd_lower bd_imageSpan">
-                        <img src="../content/images/tile%20elephant.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_invisible bd_imageSpan" 
-                        onmouseenter=
-                        "changeOverlayStatus('bd_poemElephant', true)" 
-                        onmouseleave=
-                        "changeOverlayStatus('bd_poemElephant', false)">
-                        <img src="../content/images/tile%20elephant.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_upper bd_imageSpan" id="bd_poemElephant">
-                        <img src="../content/images/poem%20elephant.jpg" 
-                            class="bd_image">
-                    </span>
-                </div>
-                <h1>
-                    is one of the gifts this alphabet set offers like no other.
-                </h1>
-            </div>
-            <div class="jumbotron bd_colour1">
-                <h1>
-                    The set includes concepts such as 'under', 'quiet', or 
-                    'touch'
-                </h1>
-                <div class="bd_container center-block">
-                    <span class="bd_lower bd_imageSpan">
-                        <img src="../content/images/tile%20touch.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_invisible bd_imageSpan" 
-                        onmouseenter=
-                        "changeOverlayStatus('bd_poemTouch', true)" 
-                        onmouseleave=
-                        "changeOverlayStatus('bd_poemTouch', false)">
-                        <img src="../content/images/tile%20touch.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_upper bd_imageSpan" id="bd_poemTouch">
-                        <img src="../content/images/poem%20touch.jpg" 
-                            class="bd_image">
-                    </span>
-                </div>
-                <p>
-                    The poem envokes the touch sense, an internal response to 
-                    contact with the outside world. <br>
-                    The image suggests a greater idea where a tiny touch or 
-                    hint of something can bring out special
-                    wonder
-                </p>
-            </div>
-            <div class="jumbotron bd_colour3">
-                <h1>
-                    'Idea': "in my head an idea I see..."
-                </h1>
-                <div class="bd_container center-block">
-                    <span class="bd_lower bd_imageSpan">
-                        <img src="../content/images/tile%20idea.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_invisible bd_imageSpan" 
-                        onmouseenter=
-                        "changeOverlayStatus('bd_poemIdea', true)" 
-                        onmouseleave=
-                        "changeOverlayStatus('bd_poemIdea', false)">
-                        <img src="../content/images/tile%20idea.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_upper bd_imageSpan" id="bd_poemIdea">
-                        <img src="../content/images/poem%20idea.jpg" 
-                            class="bd_image">
-                    </span>
-                </div>
-                <p>
-                    In my head, an idea I see. Would you like to try with me? 
-                    <br> A square and a triangle joined up as one! I like making
-                    shapes, it's lots of fun.
-                </p>
-                <h1>
-                    And 'quiet': "...shhhhh...",
-                </h1>
-                <div class="bd_container c enter-block">
-                    <span class="bd_lower bd_imageSpan">
-                        <img src="../content/images/TIQ quiet.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_invisible bd_imageSpan" 
-                        onmouseenter=
-                        "changeOverlayStatus('bd_poemQuiet', true)" 
-                        onmouseleave=
-                        "changeOverlayStatus('bd_poemQuiet', false)">
-                        <img src="../content/images/TIQ quiet.jpg" 
-                            class="bd_image">
-                    </span>
-                    <span class="bd_upper bd_imageSpan" id="bd_poemQuiet">
-                        <img src="../content/images/poem%20quiet.jpg" 
-                            class="bd_image">
-                    </span>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h2>
-                            <b>I</b> is for 'igloo' or <b>Q</b> for 'queen' are 
-                            not as relevant as they once were. <br> It is 
-                            delight to take the letter 'u' for 'under' and watch
-                            a 3-year-old cheekily tuck it under the 'car': "toot
-                            toot chomp!"
-                        </h2>
-                    </div>
-                    <div class="col-lg-8">
-                        <img src="../content/images/PIC UNDER CAR.png" 
-                            class="img-responsive center-block">
-                    </div>
-                </div>
-            </div>
-            <div class="jumbotron bd_colour1">
-                <h1>
-                    The full set
-                </h1>
-                <img src="../content/images/alphabet art all letters.jpg" 
-                    class="center-block">
-                <p>
-                    <br>The senses are the windows to the world. Treated with 
-                    respect, they are capacities through which we develop strong
-                    faculties. alphabet art is an early childhood discovery into
-                    objects, feelings, sounds and gestures, laying the 
-                    foundation for the enthusiasm to enquire into the world, to
-                    foster the senses, to make the most of life!
-                </p>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="../content/images/testimonial 1.jpg" 
-                            class="img-responsive">
-                        <p>
-                            <br>Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs
-                            kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop. Kielbasa turducken turkey
-                            cow shoulder pig prosciutto hamburger corned beef short loin, meatloaf tri-tip drumstick.
-                            Shankle sirloin ground round fatback, cow pancetta boudin t-bone pig. Ham short ribs cow
-                            tri-tip ribeye beef ribs boudin. Short ribs pork belly leberkas salami chuck, pork loin ball
-                            tip tenderloin turkey chicken pork chop filet mignon biltong.
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="../content/images/testimonial 2.jpg" 
-                            class="img-responsive">
-                        <p>
-                            <br>Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs
-                            kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop. Kielbasa turducken turkey
-                            cow shoulder pig prosciutto hamburger corned beef short loin, meatloaf tri-tip drumstick.
-                            Shankle sirloin ground round fatback, cow pancetta boudin t-bone pig. Ham short ribs cow
-                            tri-tip ribeye beef ribs boudin. Short ribs pork belly leberkas salami chuck, pork loin ball
-                            tip tenderloin turkey chicken pork chop filet mignon biltong.
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="../content/images/testimonial 3.jpg" 
-                            class="img-responsive">
-                        <p>
-                            <br>Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs
-                            kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop. Kielbasa turducken turkey
-                            cow shoulder pig prosciutto hamburger corned beef short loin, meatloaf tri-tip drumstick.
-                            Shankle sirloin ground round fatback, cow pancetta boudin t-bone pig. Ham short ribs cow
-                            tri-tip ribeye beef ribs boudin. Short ribs pork belly leberkas salami chuck, pork loin ball
-                            tip tenderloin turkey chicken pork chop filet mignon biltong.
-                        </p>
-                    </div>
-                    <div class="col-lg-12">
-                        <p>
-                            alphabet art is a set of 26 stunning alphabet 
-                            picture cards to be hung in any configuration, plus 
-                            a delightful book of poems for bedtime reading. 
-                            Instructions for hanging the cards is included 
-                            (such as using a 3M removable adhesive, using strips
-                            of felt and Velcro, using pegs).
-                        </p>
-                    </div>
-                    <div class="col-lg-12">
-                        <h1>
-                            Recommended
-                        </h1>
-                        <p>
-                            alphabet art is recommended as a gift to an 
-                            expecting family for decorating the nursery, and for
-                            any child under six. As a gift to a nursing mother 
-                            it is such a divine set of gorgeous images to 
-                            contemplate while nursing and adds warmth and love 
-                            to the room. When given to a toddler, it is loved by
-                            both girls and boys.
-                        </p>
-                    </div>
-                    <div class="col-lg-12 panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" 
-                                        data-parent="#accordion" 
-                                        href="#collapse1">
-                                        Loved by girls</a>
-                                </h4>
-                            </div>
-                            <div id="collapse1" class=
-                                "panel-collapse collapse in">
-                                <div class="panel-body row">
-                                    <div class="col-lg-6">
-                                        <img src=
-                                            "../content/images/
-                                            loved by girls.jpg" 
-                                            class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <p>
-                                            Early readers engage immediately 
-                                            with the poems and like to trace 
-                                            their finger down the side of each 
-                                            page where the whole alphabet is 
-                                            printed and also tracing the letter
-                                            on the picture.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" 
-                                        data-parent="#accordion" 
-                                        href="#collapse2">
-                                        Loved by boys</a>
-                                </h4>
-                            </div>
-                            <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body row">
-                                    <div class="col-lg-6">
-                                        <img src=
-                                        "../content/images/loved by boys.jpg" 
-                                        class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <p>
-                                            You can be confidently assured the 
-                                            pictures especially will be really
-                                            valued, and thus a great entry to 
-                                            the use of descriptive language.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" 
-                                        data-parent="#accordion" 
-                                        href="#collapse3">
-                                        Loved by boys</a>
-                                </h4>
-                            </div>
-                            <div id="collapse3" class="panel-collapse collapse">
-                                <div class="panel-body row">
-                                    <div class="col-lg-6">
-                                        <img src=
-                                        "../content/images/older child.jpg" 
-                                        class="img-responsive">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <p>
-                                            My experience over the past 12 years
-                                            allows me to tell you alphabet art
-                                            will stay on the wall when other 
-                                            imagery come down. I have been 
-                                            visited at fairs by 14 - 16 year old
-                                            children (both boys and girls) who 
-                                            were gifted a set in their 
-                                            toddler-hood and they tell me they 
-                                            still have alphabet art on their 
-                                            bedroom walls, and remain, well, 
-                                            basically in love with it!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="jumbotron">
-                <h1>
-                    About
-                </h1>
-                <p>
-                    The alphabet set was originally painted by Austin Whincup as
-                    a gift to his brother and sister-in-law on the birth of 
-                    their child. Austin was working as a dishwasher in London at
-                    the time, so collected plastic lids from the ice-cream 
-                    containers, and with the guidance of his mother back home in
-                    New Zealand (early childhood teacher Joan), he would swap 
-                    his gloves for his paintbrushes completed this marvellous
-                    alphabet and sent it home where it was immediately hung in 
-                    the new baby's room. <br> Many friends wanted a copy and one
-                    in particular, Moira Wairama, a Wellington poet and 
-                    playwright who also taught early childhood in Aotearoa, 
-                    pretty much insisted she write a poem for each letter. In
-                    doing so, "Alphabet Art" was born.
-                </p>
-            </div>
-            <div class="jumbotron" id="bd_purchase">
-                <h1>
-                    Purchase
-                </h1>
-                <a href="https://felt.co.nz/listing/276258/alphabet-art">
-                    <button class="btn-success btn-default btn">
-                        Purchase
-                    </button>
-                </a>
-            </div>
-        </div>
-    </div>
+	<nav class='navbar navbar-default navbar-fixed-top'>
+		<div class='navbar-header'>
+			<a href='#'
+				class='navbar-brand'>
+				Basically Differant
+			</a>
+		</div>
+		<div class='collapse navbar-collapse'>
+			<ul class='nav navbar-nav'>
+				<li class='active'>
+					<a href='#'
+						onclick="scrollToElement('bd_top')">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href='#'
+						onclick="scrollToElement('bd_purchase')">
+						Purchase
+					</a>
+				</li>
+				<li>
+					<a href='#'>
+						Cycoda
+					</a>
+				</li>
+				<li>
+					<a href='#'>
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div style='height: 100px'
+		id='bd_top'></div>
+	<!-- Main site body -->
+	<div class='row'>
+		<div class='col-lg-6 center-block'>
+			<img src='../content/images/logo header 2.jpg'
+				class='img-responsive'
+				width='100%'>
+		</div>
+		<div class='container'>
+			<div class='jumbotron bd_colour1'>
+				<h1>
+					Laying the foundation to enquire into the world
+				</h1>
+				<p>
+					The senses are the windows to the world. Treated with
+					respect, they are capacities through which we
+					develop strong faculties. This stunning alphabet set and
+					delightful book of poems reinforce early
+					childhood learning and extends vocabulary, while encouraging
+					and developing the comprehension of
+					art and literature in a fun and exciting way.
+				</p>
+			</div>
+			<div class='jumbotron bd_colour2'>
+				<h1>
+					Foster the senses and make the most of life!
+				</h1>
+				<p>
+					26 beautiful alphabet cards together with a book of poems
+					fire all sorts of synapses in the brain, stimulating
+					imagination.
+				</p>
+			</div>
+			<div class='jumbotron bd_colour3'>
+				<p>
+					The set includes beautiful paintings of the things in our
+					world that our children can point to, or see and describe.
+				</p>
+			</div>
+			<div class='jumbotron bd_colour4 bd_storySection'>
+				<h2>
+					To hear a child describe a butterfly as a 'fluttering
+					rainbow',
+				</h2>
+				<div class='bd_container center-block'>
+					<span class='bd_lower bd_imageSpan'>
+						<img src='../content/images/tile%20butterfly.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_invisible bd_imageSpan'
+						onmouseenter=
+							"changeOverlayStatus('bd_poemButterfly', true)"
+						onmouseleave=
+							"changeOverlayStatus('bd_poemButterfly', false)">
+           	<img src='../content/images/BVE butterfly pic.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_upper bd_imageSpan'
+						id='bd_poemButterfly'>
+						<img src='../content/images/BVE butterfly text.png'
+							class='bd_image'>
+					</span>
+				</div>
+				<h2>
+					a volcano as 'scary exciting, mountain on fire',
+				</h2>
+				<div class='bd_container center-block'>
+					<span class='bd_lower bd_imageSpan'>
+						<img src='../content/images/tile%20volcano.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_invisible bd_imageSpan'
+						onmouseenter=
+							"changeOverlayStatus('bd_poemVolcano', true)"
+						onmouseleave=
+							"changeOverlayStatus('bd_poemVolcano', false)">
+						<img src='../content/images/tile%20volcano.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_upper bd_imageSpan'
+						id='bd_poemVolcano'>
+						<img src='../content/images/poem%20volcano.jpg'
+							class='bd_image'>
+					</span>
+				</div>
+				<h2>
+					or ask an elaphant, 'can I be your friend?',
+				</h2>
+				<div class='bd_container center-block'>
+					<span class='bd_lower bd_imageSpan'>
+						<img src='../content/images/tile%20elephant.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_invisible bd_imageSpan'
+						onmouseenter=
+							"changeOverlayStatus('bd_poemElephant', true)"
+						onmouseleave=
+							"changeOverlayStatus('bd_poemElephant', false)">
+						<img src='../content/images/tile%20elephant.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_upper bd_imageSpan'
+						id='bd_poemElephant'>
+						<img src='../content/images/poem%20elephant.jpg'
+							class='bd_image'>
+					</span>
+				</div>
+				<h1>
+					is one of the gifts this alphabet set offers like no other.
+				</h1>
+			</div>
+			<div class='jumbotron bd_colour1'>
+				<h1>
+					The set includes concepts such as 'under', 'quiet', or
+					'touch'
+				</h1>
+				<div class='bd_container center-block'>
+					<span class='bd_lower bd_imageSpan'>
+						<img src='../content/images/tile%20touch.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_invisible bd_imageSpan'
+						onmouseenter=
+							"changeOverlayStatus('bd_poemTouch', true)"
+						onmouseleave=
+							"changeOverlayStatus('bd_poemTouch', false)">
+						<img src='../content/images/tile%20touch.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_upper bd_imageSpan'
+						id='bd_poemTouch'>
+						<img src='../content/images/poem%20touch.jpg'
+							class='bd_image'>
+					</span>
+				</div>
+				<p>
+					The poem envokes the touch sense, an internal response to
+					contact with the outside world.
+					<br>
+					The image suggests a greater idea where a tiny touch or
+					hint of something can bring out special
+					wonder
+				</p>
+			</div>
+			<div class='jumbotron bd_colour3'>
+				<h1>
+					'Idea': "in my head an idea I see..."
+				</h1>
+				<div class='bd_container center-block'>
+					<span class='bd_lower bd_imageSpan'>
+						<img src='../content/images/tile%20idea.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_invisible bd_imageSpan'
+						onmouseenter=
+							"changeOverlayStatus('bd_poemIdea', true)"
+						onmouseleave=
+							"changeOverlayStatus('bd_poemIdea', false)">
+						<img src='../content/images/tile%20idea.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_upper bd_imageSpan'
+						id='bd_poemIdea'>
+						<img src='../content/images/poem%20idea.jpg'
+							class='bd_image'>
+					</span>
+				</div>
+				<p>
+					In my head, an idea I see. Would you like to try with me?
+					<br>
+					A square and a triangle joined up as one! I like making
+					shapes, it's lots of fun.
+				</p>
+				<h1>
+					And 'quiet': "...shhhhh...",
+				</h1>
+				<div class='bd_container c enter-block'>
+					<span class='bd_lower bd_imageSpan'>
+						<img src='../content/images/TIQ quiet.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_invisible bd_imageSpan'
+						onmouseenter=
+							"changeOverlayStatus('bd_poemQuiet', true)"
+						onmouseleave=
+							"changeOverlayStatus('bd_poemQuiet', false)">
+						<img src='../content/images/TIQ quiet.jpg'
+							class='bd_image'>
+					</span>
+					<span class='bd_upper bd_imageSpan'
+						id='bd_poemQuiet'>
+						<img src='../content/images/poem%20quiet.jpg'
+							class='bd_image'>
+					</span>
+				</div>
+				<div class='row'>
+					<div class='col-lg-4'>
+						<h2>
+							<b>I</b>
+							is for 'igloo' or
+							<b>Q</b>
+							for 'queen' are
+							not as relevant as they once were.
+							<br>
+							It is
+							delight to take the letter 'u' for 'under' and watch
+							a 3-year-old cheekily tuck it under the 'car': "toot
+							toot chomp!"
+						</h2>
+					</div>
+					<div class='col-lg-8'>
+						<img src='../content/images/PIC UNDER CAR.png'
+							class='img-responsive center-block'>
+					</div>
+				</div>
+			</div>
+			<div class='jumbotron bd_colour1'>
+				<h1>
+					The full set
+				</h1>
+				<img src='../content/images/alphabet art all letters.jpg'
+					class='center-block'>
+				<p>
+					<br>
+					The senses are the windows to the world. Treated with
+					respect, they are capacities through which we develop strong
+					faculties. alphabet art is an early childhood discovery into
+					objects, feelings, sounds and gestures, laying the
+					foundation for the enthusiasm to enquire into the world, to
+					foster the senses, to make the most of life!
+				</p>
+				<div class='row'>
+					<div class='col-lg-4'>
+						<img src='../content/images/testimonial 1.jpg'
+							class='img-responsive'>
+						<p>
+							<br>
+							Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs
+							kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop. Kielbasa turducken turkey
+							cow shoulder pig prosciutto hamburger corned beef short loin, meatloaf tri-tip drumstick.
+							Shankle sirloin ground round fatback, cow pancetta boudin t-bone pig. Ham short ribs cow
+							tri-tip ribeye beef ribs boudin. Short ribs pork belly leberkas salami chuck, pork loin ball
+							tip tenderloin turkey chicken pork chop filet mignon biltong.
+						</p>
+					</div>
+					<div class='col-lg-4'>
+						<img src='../content/images/testimonial 2.jpg'
+							class='img-responsive'>
+						<p>
+							<br>
+							Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs
+							kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop. Kielbasa turducken turkey
+							cow shoulder pig prosciutto hamburger corned beef short loin, meatloaf tri-tip drumstick.
+							Shankle sirloin ground round fatback, cow pancetta boudin t-bone pig. Ham short ribs cow
+							tri-tip ribeye beef ribs boudin. Short ribs pork belly leberkas salami chuck, pork loin ball
+							tip tenderloin turkey chicken pork chop filet mignon biltong.
+						</p>
+					</div>
+					<div class='col-lg-4'>
+						<img src='../content/images/testimonial 3.jpg'
+							class='img-responsive'>
+						<p>
+							<br>
+							Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs
+							kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop. Kielbasa turducken turkey
+							cow shoulder pig prosciutto hamburger corned beef short loin, meatloaf tri-tip drumstick.
+							Shankle sirloin ground round fatback, cow pancetta boudin t-bone pig. Ham short ribs cow
+							tri-tip ribeye beef ribs boudin. Short ribs pork belly leberkas salami chuck, pork loin ball
+							tip tenderloin turkey chicken pork chop filet mignon biltong.
+						</p>
+					</div>
+					<div class='col-lg-12'>
+						<p>
+							alphabet art is a set of 26 stunning alphabet
+							picture cards to be hung in any configuration, plus
+							a delightful book of poems for bedtime reading.
+							Instructions for hanging the cards is included
+							(such as using a 3M removable adhesive, using strips
+							of felt and Velcro, using pegs).
+						</p>
+					</div>
+					<div class='col-lg-12'>
+						<h1>
+							Recommended
+						</h1>
+						<p>
+							alphabet art is recommended as a gift to an
+							expecting family for decorating the nursery, and for
+							any child under six. As a gift to a nursing mother
+							it is such a divine set of gorgeous images to
+							contemplate while nursing and adds warmth and love
+							to the room. When given to a toddler, it is loved by
+							both girls and boys.
+						</p>
+					</div>
+					<div class='col-lg-12 panel-group'
+						id='accordion'>
+						<div class='panel panel-default'>
+							<div class='panel-heading'>
+								<h4 class='panel-title'>
+									<a data-toggle='collapse'
+										data-parent='#accordion'
+										href='#collapse1'>
+										Loved by girls
+									</a>
+								</h4>
+							</div>
+							<div id='collapse1'
+								class=
+									'panel-collapse collapse in'>
+								<div class='panel-body row'>
+									<div class='col-lg-6'>
+										<img src=
+											'../content/images/loved by girls.jpg'
+											class='img-responsive'>
+									</div>
+									<div class='col-lg-6'>
+										<p>
+											Early readers engage immediately
+											with the poems and like to trace
+											their finger down the side of each
+											page where the whole alphabet is
+											printed and also tracing the letter
+											on the picture.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='panel panel-default'>
+							<div class='panel-heading'>
+								<h4 class='panel-title'>
+									<a data-toggle='collapse'
+										data-parent='#accordion'
+										href='#collapse2'>
+										Loved by boys
+									</a>
+								</h4>
+							</div>
+							<div id='collapse2'
+								class='panel-collapse collapse'>
+								<div class='panel-body row'>
+									<div class='col-lg-6'>
+										<img src=
+											'../content/images/loved by boys.jpg'
+											class='img-responsive'>
+									</div>
+									<div class='col-lg-6'>
+										<p>
+											You can be confidently assured the
+											pictures especially will be really
+											valued, and thus a great entry to
+											the use of descriptive language.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='panel panel-default'>
+							<div class='panel-heading'>
+								<h4 class='panel-title'>
+									<a data-toggle='collapse'
+										data-parent='#accordion'
+										href='#collapse3'>
+										Loved by boys
+									</a>
+								</h4>
+							</div>
+							<div id='collapse3'
+								class='panel-collapse collapse'>
+								<div class='panel-body row'>
+									<div class='col-lg-6'>
+										<img src=
+											'../content/images/older child.jpg'
+											class='img-responsive'>
+									</div>
+									<div class='col-lg-6'>
+										<p>
+											My experience over the past 12 years
+											allows me to tell you alphabet art
+											will stay on the wall when other
+											imagery come down. I have been
+											visited at fairs by 14 - 16 year old
+											children (both boys and girls) who
+											were gifted a set in their
+											toddler-hood and they tell me they
+											still have alphabet art on their
+											bedroom walls, and remain, well,
+											basically in love with it!
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='jumbotron'>
+				<h1>
+					About
+				</h1>
+				<p>
+					The alphabet set was originally painted by Austin Whincup as
+					a gift to his brother and sister-in-law on the birth of
+					their child. Austin was working as a dishwasher in London at
+					the time, so collected plastic lids from the ice-cream
+					containers, and with the guidance of his mother back home in
+					New Zealand (early childhood teacher Joan), he would swap
+					his gloves for his paintbrushes completed this marvellous
+					alphabet and sent it home where it was immediately hung in
+					the new baby's room.
+					<br>
+					Many friends wanted a copy and one
+					in particular, Moira Wairama, a Wellington poet and
+					playwright who also taught early childhood in Aotearoa,
+					pretty much insisted she write a poem for each letter. In
+					doing so, "Alphabet Art" was born.
+				</p>
+			</div>
+			<div class='jumbotron'
+				id='bd_purchase'>
+				<h1>
+					Purchase
+				</h1>
+				<a href='https://felt.co.nz/listing/276258/alphabet-art'>
+					<button class='btn-success btn-default btn'>
+						Purchase
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
 </body>
 </html> 
